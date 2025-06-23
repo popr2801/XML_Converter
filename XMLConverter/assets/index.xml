@@ -1,0 +1,79 @@
+<Invoice xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:qdt="urn:oasis:names:specification:ubl:schema:xsd:QualifiedDataTypes-2" xmlns:udt="urn:oasis:names:specification:ubl:schema:xsd:UnqualifiedDataTypes-2" xmlns:ccts="urn:un:unece:uncefact:documentation:2" xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd">
+<cbc:CustomizationID>
+urn:cen.eu:en16931:2017#compliant#urn:efactura.mfinante.ro:CIUS-RO:1.0.0
+</cbc:CustomizationID>
+<cbc:ID>object_ref</cbc:ID>
+<cbc:IssueDate>object_date_creation</cbc:IssueDate>
+<cbc:DueDate>object_date_limit</cbc:DueDate>
+<cbc:InvoiceTypeCode>380</cbc:InvoiceTypeCode>
+<cbc:DocumentCurrencyCode>RON</cbc:DocumentCurrencyCode>
+<cac:AccountingSupplierParty>
+<cac:Party>
+<cac:PartyIdentification>
+<cbc:ID>mycompany_idprof1</cbc:ID>
+</cac:PartyIdentification>
+<cac:PartyName>
+<cbc:Name>mycompany_name</cbc:Name>
+</cac:PartyName>
+<cac:PostalAddress>
+<cbc:StreetName>
+mycompany_address
+</cbc:StreetName>
+<cbc:CityName>mycompany_town</cbc:CityName>
+<cbc:CountrySubentity>RO-B</cbc:CountrySubentity>
+<cac:Country>
+<cbc:IdentificationCode>RO</cbc:IdentificationCode>
+</cac:Country>
+</cac:PostalAddress>
+<cac:PartyLegalEntity>
+<cbc:RegistrationName>mycompany_name</cbc:RegistrationName>
+<cbc:CompanyID>mycompany_idprof1</cbc:CompanyID>
+</cac:PartyLegalEntity>
+</cac:Party>
+</cac:AccountingSupplierParty>
+<cac:AccountingCustomerParty>
+<cac:Party>
+<cac:PartyIdentification>
+<cbc:ID>19211548</cbc:ID>
+</cac:PartyIdentification>
+<cac:PartyName>
+<cbc:Name>company_name</cbc:Name>
+</cac:PartyName>
+<cac:PostalAddress>
+<cbc:StreetName>company_address</cbc:StreetName>
+<cbc:CityName>company_town</cbc:CityName>
+<cbc:CountrySubentity>RO-B</cbc:CountrySubentity>
+<cac:Country>
+<cbc:IdentificationCode>RO</cbc:IdentificationCode>
+</cac:Country>
+</cac:PostalAddress>
+<cac:PartyLegalEntity>
+<cbc:RegistrationName>company_name</cbc:RegistrationName>
+<cbc:CompanyID>company_idprof1</cbc:CompanyID>
+</cac:PartyLegalEntity>
+</cac:Party>
+</cac:AccountingCustomerParty>
+<cac:TaxTotal>
+<cbc:TaxAmount currencyID="RON">object_total_ht</cbc:TaxAmount>
+<cac:TaxSubtotal>
+<cbc:TaxableAmount currencyID="RON">object_total_ttc</cbc:TaxableAmount>
+<cbc:TaxAmount currencyID="RON">object_total_ht</cbc:TaxAmount>
+<cac:TaxCategory>
+<cbc:ID>O</cbc:ID>
+<cbc:TaxExemptionReasonCode>VATEX-EU-O</cbc:TaxExemptionReasonCode>
+<cac:TaxScheme>
+<cbc:ID>VAT</cbc:ID>
+</cac:TaxScheme>
+</cac:TaxCategory>
+</cac:TaxSubtotal>
+</cac:TaxTotal>
+<cac:LegalMonetaryTotal>
+<cbc:LineExtensionAmount currencyID="RON">object_total_ht</cbc:LineExtensionAmount>
+<cbc:TaxExclusiveAmount currencyID="RON">object_total_ht</cbc:TaxExclusiveAmount>
+<cbc:TaxInclusiveAmount currencyID="RON">object_total_ht</cbc:TaxInclusiveAmount>
+<cbc:PayableAmount currencyID="RON">object_total_ht</cbc:PayableAmount>
+</cac:LegalMonetaryTotal>
+<cac:InvoiceLine>
+invoiceline
+</cac:InvoiceLine>
+</Invoice>
